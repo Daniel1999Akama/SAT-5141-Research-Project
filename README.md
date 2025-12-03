@@ -74,8 +74,10 @@ Performed **after initial preprocessing**.
 - Demographic summaries  
 
 **Bivariate Analysis:**  
-- Correlations  
-- Feature vs. target relationships  
+- Correlations
+![alt text](https://github.com/Daniel1999Akama/SAT-5141-Research-Project/blob/main/screenshots/correlation.png)
+
+- Feature vs. target relationships
 
 **Class imbalance identified (training set):**
 
@@ -93,11 +95,7 @@ Added interpretable clinical features:
 
 - Age brackets  
 - Comorbidity score  
-- Total medications  
-- Diagnosis grouping  
-- Encounter frequency  
-- Severity groupings  
-
+- Total medications    
 ---
 
 ### 3.4 🔐 Patient-Level Train/Test Split
@@ -117,6 +115,7 @@ Applied **only on training data** to avoid leakage.
 Balanced class counts:  
 → **All classes oversampled to 41,794**  
 
+![alt text](https://github.com/Daniel1999Akama/SAT-5141-Research-Project/blob/main/screenshots/smote.png)
 ---
 
 ### 3.6 📏 Scaling
@@ -147,6 +146,8 @@ Reported (Macro):
 - F1 Score  
 - ROC AUC  
 
+![alt text](https://github.com/Daniel1999Akama/SAT-5141-Research-Project/blob/main/screenshots/metrics.png)
+
 **Best model:**  
 ⭐ **XGBoost** — AUC ~0.66  
 But overall performance remains moderate.
@@ -156,13 +157,15 @@ But overall performance remains moderate.
 ### 3.9 🧠 Explainable AI (SHAP)
 
 **Global Explanations:**  
-- Summary bar plots  
-- Feature importance rankings  
+- Summary SHAP plots
+![alt text](https://github.com/Daniel1999Akama/SAT-5141-Research-Project/blob/main/screenshots/shap.png) 
+- Feature importance rankings
+![alt text](https://github.com/Daniel1999Akama/SAT-5141-Research-Project/blob/main/screenshots/importance.png) 
 - Feature dependence  
 
 **Local Explanations:**  
 - Sample-level waterfall plots  
-- Case-specific interpretation  
+![alt text](https://github.com/Daniel1999Akama/SAT-5141-Research-Project/blob/main/screenshots/waterfall.png) 
 
 Strong emphasis on **interpretability over deployment**.
 
@@ -220,6 +223,17 @@ Thus, we prioritized **explainability, diagnostics, and data understanding** ins
 
 ---
 
-## 7. Project Structure
+## 7. Installation and requirements
+Requirements - ensure you have python and VS code installed with the following libraries.
+- Python 3.10+, pandas, numpy, scikit-learn, imbalanced-learn, xgboost, shap, matplotlib, seaborn
+
+Setup
+- Take repo URL then in terminal:
+> git clone "repo URL"
+- Open Jupyter Notebook in VS code and run all cells.
+
+## 8. Contributors
+Daniel Nyamweya (Lead Researcher & Implementer)
+
 
 
