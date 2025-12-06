@@ -1,3 +1,7 @@
+### Video presentation is below, click the youtube badge. 
+[![Video](https://img.shields.io/badge/YouTube-Video-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=RYfFJnzeA38)
+##### file was too large to be hosted on github.
+
 # 🔍 Explainable AI for Real-Time Clinical Decision Support in Predicting 30-Day Readmission for Diabetic Patients.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
